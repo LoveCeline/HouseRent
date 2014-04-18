@@ -1,12 +1,15 @@
 doctype html
-html(ng-app='HouseRent')
+html(ng-app="HouseRent" lang="zh-CN")
     head
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-        script(src='/javascripts/jquery.min.js')
-        script(src='/javascripts/bootstrap.min.js')
-        script(src='/javascripts/angular.min.js')
-        script(src='/javascripts/angular-route.min.js')
-    body(ng-controller='MainBody')
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8")
+        //link
+        link(rel="stylesheet", href="/stylesheets/style.css")
+        link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+        //script
+        script(src="/javascripts/jquery.min.js")
+        script(src="/javascripts/bootstrap.min.js")
+        script(src="/javascripts/angular.min.js")
+        script(src="/javascripts/angular-route.min.js")
+    body(ng-controller="MainBody")
         block content
