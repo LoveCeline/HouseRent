@@ -11,7 +11,14 @@ a {
 }
 
 .topDiv {
-    background-color: #ffff00;
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(silver), color-stop(0.5,#ffffff),to(white));/*chrome/Safari*/
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=silver,endcolorstr=white,gradientType=0);/*IE*/
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=silver,endcolorstr=white,gradientType=0);/*IE8*/
+    background:silver; /* 一些不支持背景渐变的浏览器 */
+    background:-moz-linear-gradient(top, silver,rgba(255,255,255,0.5),white);/*Firefox*/
+    background:-o-linear-gradient(top, silver,rgba(255,255,255,0.5),white);/*Opera11*/
+
     height: 10%;
 }
 
