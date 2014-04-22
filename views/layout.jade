@@ -4,12 +4,12 @@ html(ng-app="HouseRent" lang="zh-CN")
         title= title
         meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8")
         //link
+        block style
         link(rel="stylesheet", href="/stylesheets/style.css")
         link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
         //script
         script(src="/javascripts/jquery.min.js")
         script(src="/javascripts/bootstrap.min.js")
-        //script(src="/javascripts/angular.min.js")
-        //script(src="/javascripts/angular-route.min.js")
+        block script
     body(ng-controller="MainBody")
         block content
