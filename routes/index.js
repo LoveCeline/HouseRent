@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('hindIndex', { title: '租房管理' });
+    res.render('hindViews/hindIndex', { title: '租房管理' });
 };
